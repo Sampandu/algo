@@ -14,7 +14,24 @@ const twoSum = (nums, target) => {
   return false;
 }
 
-//solution2: Because one element can't be used twice, so we could use Set to check if the difference between target and one element exists in the nums.
+//solution2: instead of using Set, use Array.includes
+const twoSum = (nums, target) => {
+  if (nums.length === 0) {
+    return false
+  }
+
+  for (let i = 0; i < nums.length; i++) {
+    const diff = target - nums[i]
+    if (nums.includes(diff) && nums.indexOf(diff) !== i) {
+      // case: nums = [3, 5,7], target = 6, if we don't check nums.indexOf(diff) !== i, it might return [0, 0]
+      return [i, nums.indexOf(diff)]
+    }
+  }
+
+  return false
+}
+
+//solution3: Because one element can't be used twice, so we could use Set to check if the difference between target and one element exists in the nums. time complexity: O(n)
 const twoSum = (nums, target) => {
   if (nums.length === 0) {
     return false
