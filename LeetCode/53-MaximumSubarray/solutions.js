@@ -16,7 +16,7 @@ const maxSubArray = function(nums) {
   return Math.max(...sumGroup)
 }
 
-// optimize, time complexity: O(n^2), space complexity: O(1)
+//solution2: optimize, time complexity: O(n^2), space complexity: O(1)
 const maxSubArray = nums => {
   let sum = nums[0]
   let max = sum
