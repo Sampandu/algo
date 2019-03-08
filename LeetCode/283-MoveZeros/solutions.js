@@ -1,4 +1,4 @@
-// solution1, brute force, check if current num is 0 and swap with adjacent num if it is 0, the tricky case is [0,0,1], time complexity is O(n^3)
+// solution1, brute force, check if current num is 0 and swap with adjacent num if it is 0, the tricky case is [0,0,1], time complexity: O(n^3)
 var moveZeroes = function(nums) {
   for (let i = 0; i < nums.length - 1; i++) {
     for (let j = 0; j < nums.length; j++) {
@@ -18,3 +18,16 @@ var moveZeroes = function(nums) {
 
   return nums
 };
+
+//solution2, time complexity: O()
+const moveZeroes = nums => {
+  let index = 0
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] !== 0) {
+      nums[index] = nums[i]
+      nums[i] = index === i ? nums[i]: 0
+      index++
+    }
+  }
+  return nums
+}
