@@ -11,7 +11,7 @@ const containsDuplicate = nums => {
   return false
 }
 
-//solution2: sorting the array then check adjacent element is bigger or not. However, the time complexity of array.sort() is uncertain, it depends on the implementation of browser.
+//solution2: sorting the array then check adjacent element is bigger or not. However, the time complexity of array.sort() is uncertain, it depends on the implementation of browser. Normally, time complexity is O(n.logn)
 const containsDuplicate = nums => {
   const sorted = nums.sort((a, b) => a - b )
   for (let i = 0; i < sorted.length - 1; i++) {
