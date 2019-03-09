@@ -1,3 +1,4 @@
+//read the description carefully, it required the absolute difference is at most k, not equal to k.
 //solution1, time complexity O(n^3)
 const containsNearbyDuplicate = (nums, k) => {
   if (nums.length <= 1) {
@@ -27,5 +28,25 @@ const containsNearbyDuplicate = (nums, k) => {
           }
       }
   }
+  return false
+}
+
+//solution2, optimize. The difference of the indice between the adjacent elements is the least
+
+const containsNearbyDuplicate = (nums, k) => {
+  if (nums.length <=1) return false
+
+  const map = {}
+  for (let i = 0; i < nums.length; i++) {
+    map[nums[i]] = map[nums[i]] || []
+    map[nums[i]].push(i)
+  }
+
+  for (let key in map) {
+    for (let j = 0; j < map[key].length; j++) {
+      if (map[key][j+1] - map[key][j] <= k) return true
+    }
+  }
+
   return false
 }
