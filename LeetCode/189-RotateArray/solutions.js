@@ -1,4 +1,4 @@
-//solution1
+//solution1， time complexity O(k)
 const rotate = (nums, k) => {
   if (nums.length <= 1 || k === 0) {
     return nums
@@ -18,7 +18,7 @@ const rotate = (nums, k) => {
   return [...rotatedItems, ...nums]
 }
 
-//solution3 with space complexity O(1)
+//solution3 with space complexity O(1), time complexity O(n*k)
 const rotate = (nums, k) => {
   const len = nums.length
   let temp = nums[nums.length - 1]
@@ -30,4 +30,25 @@ const rotate = (nums, k) => {
       }
   }
   return nums
+}
+
+//solution4,reverse, time complexity O(n), space complexity O(1)
+const rotate = (nums, k) => {
+  k = k % nums.length
+
+  reverse(nums, 0, nums.length - 1)
+  reverse(nums, 0, k-1)
+  reverse(nums, k, nums.length - 1)
+
+}
+
+function reverse (array, start, end) {
+  while(start < end) {
+      const temp = array[start]
+      array[start] = array[end]
+      array[end] = temp
+      start++
+      end--
+  }
+  return array
 }
