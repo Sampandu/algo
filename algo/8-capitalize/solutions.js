@@ -1,8 +1,8 @@
 //solution1
 const capitalize = str => {
   return str.split(' ')
-            .map(word => word[0]
-            .toUpperCase() + word.slice(1))
+            .map(word => word[0]+ word.slice(1))
+            .toUpperCase()
             .join(' ')
 }
 
