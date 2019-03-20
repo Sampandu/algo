@@ -9,3 +9,24 @@ const pyramid = n => {
     console.log(step)
   }
 }
+
+//solution2, recursion
+const pyramid = (n, row=0, step='') => {
+  if (row === n) {
+    return
+  }
+
+  if (step.length === 2 * n -1) {
+    console.log(step)
+    return pyramid(n, row+1)
+  }
+
+  const midPoint = Math.floor((2*n - 1)/2)
+  let add = ''
+  if (midPoint - row <= step.length && step.length <= midPoint + row) {
+    add = '#'
+  } else {
+    add = ' '
+  }
+  pyramid(n, row, step+=add)
+}
