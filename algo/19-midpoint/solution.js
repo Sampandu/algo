@@ -1,16 +1,30 @@
-function midpoint(list) {
-  //assume the input is not empty
-
-  //check the list is null or not
-  if(!list.head) return null
-
-  let slow = list.head
-  let fast = list.head
-
-  while (fast.next && fast.next.next) {
-    slow = slow.next
-    fast = fast.next.next
+//solution1
+const midpoint = list => {
+  //check param
+  if (!list.head) {
+    return
   }
+
+  if (!list.head.next) {
+    return list.head
+  }
+
+  let slow = list.head,
+      fast = list.head
+
+  while(fast.next && fast.next.next) {
+    fast = fast.next.next
+    slow = slow.next
+  }
+
+  // while (fast) {
+  //   if (fast.next && fast.next.next) {
+  //     fast = fast.next.next
+  //     slow = slow.next
+  //   } else {
+  //     break
+  //   }
+  // }
 
   return slow
 }
