@@ -11,3 +11,5 @@
 //   l.insertLast('b')
 //   l.insertLast('c')
 //   midpoint(l); // returns { data: 'b' }
+
+//topic: link list, similar question: algo/20, 21

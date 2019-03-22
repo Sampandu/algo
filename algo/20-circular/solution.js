@@ -1,16 +1,18 @@
-function circular(list) {
-  //assume the input is not empty
+//solution
+const circular = list => {
+  //check param
+  if(!list.head || !list.head.next) {
+    return false
+  }
 
-  let slow = list.head
-  let fast = list.head
+  let slow = list.head,
+      fast = list.head
 
   while (fast.next && fast.next.next) {
-    slow = slow.next
-    fast = fast.next.next
+      fast = fast.next.next
+      slow = slow.next
 
-    if (slow === fast) {
-      return true
-    }
+      if (fast === slow) return true
   }
 
   return false

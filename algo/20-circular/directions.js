@@ -11,3 +11,5 @@
 //   b.next = c;
 //   c.next = b;
 //   circular(l) // true
+
+//topic: link list, similar question: algo/19, 21
