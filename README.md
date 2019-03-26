@@ -4,4 +4,7 @@
   * LeetCode: 1, 27, 53, 189, 217, 219, 220, 283
 
 * Linked List
-  * Leetcode:
+  * Leetcode: 24, 25, 206
+
+* Stack & Queue
+  * Algo: 14, 15, 16, 17
