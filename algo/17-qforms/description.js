@@ -11,3 +11,23 @@
 //     q.peek();  // returns 1
 //     q.remove(); // returns 1
 //     q.remove(); // returns 2
+
+// class Stack {
+//   constructor() {
+//     this.data = [];
+//   }
+
+//   push(record) {
+//     this.data.push(record);
+//   }
+
+//   pop() {
+//     return this.data.pop();
+//   }
+
+//   peek() {
+//     return this.data[this.data.length - 1];
+//   }
+// }
+
+// module.exports = Stack;
