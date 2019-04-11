@@ -1,14 +1,15 @@
 //recursion solution
 //array is sorted!!!
-const binarySearch = (sortedArr, target) => {
+const binarySearch = (arr, start, end, target) => {
+  if(arr.length === 0) return -1
 
+  if(start > end) return -1
+
+  const mid = start + Math.floor((end - start) / 2)
+  if(arr[mid] === target) return mid
+  if(arr[mid] < target) return binarySearch(arr, mid + 1, end, target)
+  else return binarySearch(arr, start, mid - 1, target)
 }
-
-
-
-
-
-
 
 //non-recursion solution
 //array is sorted!!!
