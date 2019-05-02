@@ -74,6 +74,7 @@ var strStr = function(haystack, needle) {
         }
 
         if (needleCode === haystackCode) {
+            //check if the substring is equal to target string, in case the hash collision
             //slice(start, end) rather than slice(start, length)
             if (haystack.slice(i - m + 1, i + 1) === needle) {
                 return i - m + 1
