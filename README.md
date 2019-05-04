@@ -12,3 +12,7 @@
 
 * Tree
   * Heap: 703
+
+
+* Binary Search
+  * LCode: 457
