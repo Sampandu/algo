@@ -39,7 +39,7 @@ const findTargetPosition = (arr, target) => {
     } else {
       end = mid
     }
-  }
+  }a
 
   return Math.abs(start-target) <= Math.abs(end-target) ? start : end
 }
