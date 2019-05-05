@@ -9,6 +9,7 @@ const searchMatrix = function (matrix, target) {
       end = row * col - 1
   while(start + 1 < end) {
       const mid = start + Math.floor((end - start) / 2)
+      //note: use Math.floor() to make the row and col as integer
       const number = matrix[Math.floor(mid / col)][Math.floor(mid % col)]
       if(number === target) {
           return true
