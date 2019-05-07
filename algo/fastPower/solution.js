@@ -1,3 +1,4 @@
+//non-recursion solution
 const power = (x, n) => {
   let ans = 1,
       base = x
@@ -9,4 +10,19 @@ const power = (x, n) => {
     n = Math.floor(n / 2)
   }
   return ans
+}
+
+//recursion solution
+const power = (x, n) => {
+  if (n === 0) {
+    return 1
+  }
+
+  if (n % 2 === 0) {
+    const temp = power(x, n/2)
+    return temp * temp
+  } else {
+    const temp = power(x, Math.floor(n/2))
+    return temp * temp * x
+  }
 }
