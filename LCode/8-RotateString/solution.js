@@ -1,4 +1,7 @@
 const rotateString = (str, offset) => {
+  if (str === null || str.length === 0) {
+    return -1
+  }
   //if offset is larger than the length of the string, use module %
   offset = offset % str.length
   str = reverse(str, 0, str.length - 1)
