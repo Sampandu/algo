@@ -17,7 +17,7 @@
 * Binary Search
   * LCode: 457, 14, 458, 460, 447, 159, 585, 28, 38, 61, 75, 62, 39, 8, 845
   * LeetCode: 278, 50, 796
-  * ALgo: fastPower
+  * Algo: fastPower
 
 * String
   * LCode: 627, 415
