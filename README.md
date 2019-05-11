@@ -20,5 +20,6 @@
   * Algo: fastPower
 
 * String
-  * LCode: 627, 415, 891
+  * LCode: 627, 415, 891, 56
   * LeetCode: 28
+  * Algo: validatePalindrome

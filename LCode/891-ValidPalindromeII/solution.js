@@ -17,6 +17,7 @@ const validPalindrome = s => {
     end--
   }
 
+  //case: 'aba'
   if (start >= end) {
     return true
   }
