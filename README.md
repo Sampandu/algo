@@ -19,7 +19,7 @@
   * LeetCode: 278, 50, 796
   * Algo: fastPower
 
-* String
-  * LCode: 627, 415, 891, 56, 521
+* Two pointers
+  * LCode: 627, 415, 891, 56, 521, 604, 610
   * LeetCode: 28
   * Algo: validatePalindrome
