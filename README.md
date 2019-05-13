@@ -20,6 +20,6 @@
   * Algo: fastPower
 
 * Two pointers
-  * LCode: 627, 415, 891, 56, 521, 604, 610
+  * LCode: 627, 415, 891, 56, 521, 604, 610, 102
   * LeetCode: 28
   * Algo: validatePalindrome
