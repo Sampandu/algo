@@ -22,4 +22,4 @@
 * Two pointers
   * LCode: 627, 415, 891, 56, 521, 604, 610, 102, 103
   * LeetCode: 28, 160
-  * Algo: validatePalindrome
+  * Algo: validatePalindrome, quickSort, mergeSort
