@@ -1,4 +1,4 @@
-//solution1
+//solution1 time O(nlogn), space O(1), unstable
 const sortInteger = A => {
   if (A === null || A.length === 0) {
     return

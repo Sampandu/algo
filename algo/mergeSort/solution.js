@@ -1,3 +1,4 @@
+//solution time O(nlogn), space O(n), stable
 const sortIntegers = A => {
   if (A === null || A.length === 0) {
     return

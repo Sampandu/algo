@@ -11,7 +11,8 @@
   * LeetCode: 20, 225, 232
 
 * Tree
-  * Heap: 703
+  * Heap
+    * LeetCode: 703
 
 
 * Binary Search
@@ -20,6 +21,6 @@
   * Algo: fastPower
 
 * Two pointers
-  * LCode: 627, 415, 891, 56, 521, 604, 610, 102, 103
+  * LCode: 627, 415, 891, 56, 521, 604, 610, 102, 103, 5(qucikSelect)
   * LeetCode: 28, 160
   * Algo: validatePalindrome, quickSort, mergeSort
