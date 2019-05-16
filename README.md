@@ -21,6 +21,6 @@
   * Algo: fastPower
 
 * Two pointers
-  * LCode: 627, 415, 891, 56, 521, 604, 610, 102, 103, 5(qucikSelect), 80, 148(three pointers), 894
+  * LCode: 627, 415, 891, 56, 521, 604, 610, 102, 103, 5(qucikSelect), 80, 148(three pointers), 894, 607
   * LeetCode: 28, 160
   * Algo: validatePalindrome, quickSort, mergeSort
