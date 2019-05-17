@@ -16,7 +16,7 @@ const twoSum5 = function (nums, target) {
     return count
 }
 
-//solution2, time O(n)
+//solution2, time O(nlogn)
 const twoSum5 = (nums, target) => {
   if (nums === null || nums.length <= 1 || target === null) {
       return 0
