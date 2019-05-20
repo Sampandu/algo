@@ -43,3 +43,30 @@ const moveZeroes = nums => {
     }
     return nums
 }
+
+//solution3, if the question doesn't require to maintain the relative order, this solution makes the less number of swap.
+const moveZeroes = nums => {
+    // write your code here
+    if (nums === null || nums.length === 0) {
+        return null
+    }
+
+    let left = 0,
+        right = nums.length - 1
+    while (left <= right) {
+        while (left <= right && nums[left] !== 0) {
+            left++
+        }
+        while (left <= right && nums[right] === 0) {
+            right--
+        }
+        if (left <= right) {
+            const temp = nums[left]
+            nums[left] = nums[right]
+            nums[right] = temp
+            left++
+            right--
+        }
+    }
+    return nums
+}
