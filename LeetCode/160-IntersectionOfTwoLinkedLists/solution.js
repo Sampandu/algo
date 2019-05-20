@@ -1,5 +1,5 @@
 //solution1
-//assume two links are interseted.
+//assume two links are intersected.
 const getIntersectionNode = (headA, headB) => {
   if (headA === null || headB === null) {
     return null
