@@ -27,5 +27,5 @@
 
 * BFS
   * Algo: 22, 23
-  * Lcode: 69
+  * Lcode: 69, 71
   * LeetCode: 297, 107
