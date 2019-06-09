@@ -1,31 +1,35 @@
-## Algo ##
+## Algo
 
-* Array
-  * LeetCode: 1, 27, 53, 189, 217, 219, 220, 283
+- Array
 
-* Linked List
-  * Leetcode: 24, 25, 206
+  - LeetCode: 1, 27, 53, 189, 217, 219, 220, 283
 
-* Stack & Queue
-  * Algo: 14, 15, 16, 17
-  * LeetCode: 20, 225, 232
+- Linked List
 
-* Tree
-  * Heap
-    * LeetCode: 703
+  - Leetcode: 24, 25, 206
 
+- Stack & Queue
+
+  - Algo: 14, 15, 16, 17
+  - LeetCode: 20, 225, 232
+
+- Tree
+  - Heap
+    - LeetCode: 703
 
 * Binary Search
-  * LCode: 457, 14, 458, 460, 447, 159, 585, 28, 38, 61, 75, 62, 39, 8, 845
-  * LeetCode: 278, 50, 796
-  * Algo: fastPower
+
+  - LCode: 457, 14, 458, 460, 447, 159, 585, 28, 38, 61, 75, 62, 39, 8, 845
+  - LeetCode: 278, 50, 796
+  - Algo: fastPower
 
 * Two pointers
-  * LCode: 627, 415, 891, 56, 521, 604, 610, 102, 103, 5(qucikSelect), 461, 80, 148(three pointers), 143, 894, 607, 608, 587, 382, 609, 443, 533, 58, 31, 373, 49, 539
-  * LeetCode: 28, 160, 15
-  * Algo: validatePalindrome, quickSort, mergeSort
+
+  - LCode: 627, 415, 891, 56, 521, 604, 610, 102, 103, 5(qucikSelect), 461, 80, 148(three pointers), 143, 894, 607, 608, 587, 382, 609, 443, 533, 58, 31, 373, 49, 539
+  - LeetCode: 28, 160, 15
+  - Algo: validatePalindrome, quickSort, mergeSort
 
 * BFS
-  * Algo: 22, 23
-  * Lcode: 69, 71, 242
-  * LeetCode: 297, 107
+  - Algo: 22, 23
+  - Lcode: 69, 71, 242
+  - LeetCode: 297, 107, 133
