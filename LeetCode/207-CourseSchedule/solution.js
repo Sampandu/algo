@@ -1,42 +1,44 @@
-// solution1: BFS
-function topologicalSort(jobs, deps) {
-  const jobGraph = createJobGraph(jobs, deps);
-  return getOrderedJobs(jobGraph);
-}
-
-function createJobGraph(jobs, deps) {
-  const graph = new JobGraph(jobs);
-  for (const [job, dep] of deps) {
-    graph.addDep(job, dep);
-  }
-  return graph;
-}
+var canFinish = function(numCourses, prerequisites) {
+  const graph = createJobGraph(numCourses, prerequisites);
+  return getOrderedJobs(graph);
+};
 
 function getOrderedJobs(graph) {
-  const orderedJobs = [];
   const nodesWithNoPrereqs = graph.nodes.filter(node => !node.numOfPrereqs);
   while (nodesWithNoPrereqs.length) {
     const node = nodesWithNoPrereqs.pop();
-    orderedJobs.push(node.job);
     removeDeps(node, nodesWithNoPrereqs);
   }
   const graphHasEdges = graph.nodes.some(node => node.numOfPrereqs);
-  return graphHasEdges ? [] : orderedJobs;
+  return !graphHasEdges; // noted, if graphHasEdge is true which means the topological sort is false.
 }
 
 function removeDeps(node, nodesWithNoPrereqs) {
-  while (node.dep.length) {
-    const dep = node.dep.pop();
+  while (node.deps.length) {
+    const dep = node.deps.pop();
     dep.numOfPrereqs--;
+
     if (!dep.numOfPrereqs) nodesWithNoPrereqs.push(dep);
   }
+}
+
+function createJobGraph(num, prerequisites) {
+  const jobs = [];
+  for (let i = 0; i < num; i++) {
+    jobs.push(i);
+  }
+  const graph = new JobGraph(jobs);
+  for (const [job, prereq] of prerequisites) {
+    graph.addDep(prereq, job);
+  }
+  return graph;
 }
 
 class JobGraph {
   constructor(jobs) {
     this.nodes = [];
     this.graph = {};
-    for (const job of jobs) {
+    for (let job of jobs) {
       this.addNode(job);
     }
   }
@@ -49,7 +51,7 @@ class JobGraph {
   addDep(job, dep) {
     const jobNode = this.getNode(job);
     const depNode = this.getNode(dep);
-    jobNode.dep.push(depNode);
+    jobNode.deps.push(depNode);
     depNode.numOfPrereqs++;
   }
 
@@ -62,7 +64,7 @@ class JobGraph {
 class JobNode {
   constructor(job) {
     this.job = job;
-    this.dep = [];
+    this.deps = [];
     this.numOfPrereqs = 0;
   }
 }
