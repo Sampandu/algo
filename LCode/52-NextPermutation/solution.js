@@ -1,3 +1,4 @@
+//solution, the replacement is in-place
 const nextPermutation = function(nums) {
   if (nums === null) return;
   if (nums.length <= 1) return nums;
