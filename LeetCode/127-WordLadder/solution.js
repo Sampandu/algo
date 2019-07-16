@@ -47,3 +47,47 @@ var ladderLength = function(beginWord, endWord, wordList) {
   }
   return 0;
 };
+
+//modified
+var ladderLength = function(beginWord, endWord, wordList) {
+  if (wordList === null) return 0;
+
+  const queue = [beginWord];
+  const wordSet = new Set(wordList);
+  const visited = new Set(queue);
+  let len = 1;
+
+  while (queue.length) {
+    const size = queue.length;
+
+    for (let i = 0; i < size; i++) {
+      const crt = queue.shift();
+      if (crt === endWord) {
+        return len;
+      }
+
+      const nextWords = getNextWords(crt, wordSet);
+      nextWords.forEach(word => {
+        if (!visited.has(word)) {
+          queue.push(word);
+          visited.add(word);
+        }
+      });
+    }
+    len++;
+  }
+  return 0;
+};
+
+function getNextWords(crt, wordSet) {
+  const results = [];
+  for (let i = 0; i < crt.length; i++) {
+    for (let j = 'a'.charCodeAt(0); j <= 'z'.charCodeAt(0); j++) {
+      const temp = crt.slice(0, i) + String.fromCharCode(j) + crt.slice(i + 1);
+      if (wordSet.has(temp)) {
+        results.push(temp);
+      }
+    }
+  }
+  return results;
+}
