@@ -54,3 +54,49 @@ function inBound(coor, grid) {
     col = grid[0].length;
   return coor.x >= 0 && coor.x < row && coor.y >= 0 && coor.y < col;
 }
+
+//solution DFS
+var numIslands = grid => {
+  if (grid === null) return null;
+
+  if (grid.length === 0 || grid[0].length === 0) return 0;
+
+  let number = 0;
+  for (let row = 0; row < grid.length; row++) {
+    for (let col = 0; col < grid[0].length; col++) {
+      if (grid[row][col] === '1') {
+        // 1 and 0 are strings rather than numbers
+        number++;
+        grid[row][col] = '0';
+        markByDFS(grid, row, col);
+      }
+    }
+  }
+
+  return number;
+};
+
+function markByDFS(grid, x, y) {
+  const dx = [0, 1, 0, -1];
+  const dy = [1, 0, -1, 0];
+
+  for (let i = 0; i < 4; i++) {
+    const djX = x + dx[i];
+    const djY = y + dy[i];
+
+    if (!inBound(grid, djX, djY)) {
+      continue;
+    }
+
+    if (grid[djX][djY] === '0') {
+      continue;
+    } else {
+      grid[djX][djY] = '0';
+      markByDFS(grid, djX, djY);
+    }
+  }
+}
+
+function inBound(grid, x, y) {
+  return x >= 0 && x < grid.length && y >= 0 && y < grid[0].length;
+}

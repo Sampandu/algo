@@ -34,7 +34,7 @@
   - Algo: 22, 23, Topological Sort,
   - Lcode: 69, 71, 242, 433, 892
   - LeetCode: 297, 107, 133, 127, 207, 210
-  - Lc69 -> Le297 -> Le107 -> Lc71 -> Lc242 -> Le133 -> Le127
+  - Lc69 -> Le297 -> Le107 -> Lc71 -> Lc242 -> Le133 -> Le127 -> Lc433
 
 * DFS
   - LeetCode: 78, 90, 46, 47, 39, 51, 79, 212, 126
