@@ -3,7 +3,7 @@
 - Array
 
   - LeetCode: 1, 27, 53, 189, 217, 219, 220, 283
-  - AlgoExport: 1.5, 1.6
+  - AlgoExport: 1.5, 1.6, 1.7
 
 - Linked List
 
