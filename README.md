@@ -17,6 +17,8 @@
 - Tree
   - Binary Search Tree
     - AlgoExpert: 2.1, 2.2, 2.3, 2.4
+  - Binary Tree
+    - AlgoExpert: 3.1
   - Heap
     - LeetCode: 703
 
