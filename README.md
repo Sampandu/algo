@@ -53,4 +53,4 @@
   - Le51 -> Lc52 -> Lc197 -> Lc198 -> Lc425 -> Le79 -> Le212 -> Le126(Le127)
 
 * Dynamic Programming
-  - Algoexpert: 4.1
+  - Algoexpert: 4.1, 4.2, 4.3, 4.4
