@@ -7,7 +7,7 @@
 
 - String
 
-  - AlgoExport: 5.2, 5.4
+  - AlgoExport: 5.2, 5.4, 5.5
   - LCode: 200
 
 - Linked List
