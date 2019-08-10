@@ -27,7 +27,7 @@
     - LeetCode: 124
   - Heap
     - LeetCode: 703
-    - AlgoExpert: 7.1
+    - AlgoExpert: 7.1, 7.2
 
 * Binary Search
 
