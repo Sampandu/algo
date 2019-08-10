@@ -20,6 +20,7 @@
   - LeetCode: 20, 225, 232
 
 - Tree
+
   - Binary Search Tree
     - AlgoExpert: 2.1, 2.2, 2.3, 2.4
   - Binary Tree
@@ -28,6 +29,9 @@
   - Heap
     - LeetCode: 703
     - AlgoExpert: 7.1, 7.2
+
+- Graphs
+  - AlgoExpert: 6.2
 
 * Binary Search
 
