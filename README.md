@@ -31,7 +31,7 @@
     - AlgoExpert: 7.1, 7.2
 
 - Graphs
-  - AlgoExpert: 6.1, 6.2, 6.3, 6.4
+  - AlgoExpert: 6.1, 6.2, 6.3, 6.4, 6.5
 
 * Binary Search
 
