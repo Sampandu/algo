@@ -63,4 +63,4 @@
   - Algoexpert: 4.1, 4.2, 4.3, 4.4
 
 * Trie
-  - Algoexpert: 14.1
+  - Algoexpert: 14.1, 14.2
