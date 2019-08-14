@@ -3,16 +3,17 @@
 - Array
 
   - LeetCode: 1, 27, 53, 189, 217, 219, 220, 283
-  - AlgoExport: 1.5, 1.6, 1.7
+  - AlgoExpert: 1.5, 1.6, 1.7
 
 - String
 
-  - AlgoExport: 5.2, 5.4, 5.5, 5.6
+  - AlgoExpert: 5.2, 5.4, 5.5, 5.6
   - LCode: 200
 
 - Linked List
 
   - Leetcode: 24, 25, 206
+  - AlgoExpert: 8.1
 
 - Stack & Queue
 
