@@ -2,32 +2,59 @@
 var moveZeroes = function(nums) {
   for (let i = 0; i < nums.length - 1; i++) {
     for (let j = 0; j < nums.length; j++) {
-        if(nums[j] === 0) {
-            let k = j
-            for (let l = j+1; l < nums.length; l++) {
-              if(nums[l] !== 0) {
-                const temp = nums[l]
-                nums[l] = nums[k]
-                nums[k] = temp
-              }
-              k++
-            }
+      if (nums[j] === 0) {
+        let k = j;
+        for (let l = j + 1; l < nums.length; l++) {
+          if (nums[l] !== 0) {
+            const temp = nums[l];
+            nums[l] = nums[k];
+            nums[k] = temp;
+          }
+          k++;
         }
+      }
     }
   }
 
-  return nums
+  return nums;
 };
 
 //solution2, time complexity: O()
 const moveZeroes = nums => {
-  let index = 0
+  let index = 0;
   for (let i = 0; i < nums.length; i++) {
     if (nums[i] !== 0) {
-      nums[index] = nums[i]
-      nums[i] = index === i ? nums[i]: 0
-      index++
+      nums[index] = nums[i];
+      nums[i] = index === i ? nums[i] : 0;
+      index++;
     }
   }
-  return nums
-}
+  return nums;
+};
+
+//solution3
+const moveZeroes = nums => {
+  let count = 0;
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] !== 0) {
+      nums[count++] = nums[i];
+    }
+  }
+  while (count < nums.length) {
+    nums[count++] = 0;
+  }
+};
+
+//solution4, note: this method doesn't guarantee the non-zero numbers in the left-side area is sorted.
+const moveZeroes = nums => {
+  let low = -1,
+    high = nums.length;
+  while (low + 1 < high) {
+    if (nums[low + 1] !== 0) {
+      low++;
+    } else {
+      [nums[low + 1], nums[high - 1]] = [nums[high - 1], nums[low + 1]];
+      high--;
+    }
+  }
+};
