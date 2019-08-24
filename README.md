@@ -57,6 +57,7 @@
 
   - LeetCode: 78, 90, 46, 47, 39, 51, 79, 212, 126, 17, 518, 322
   - Lcode: 52, 197, 198, 425
+  - Algo: maze
   - Le51 -> Lc52 -> Lc197 -> Lc198 -> Lc425 -> Le79 -> Le212 -> Le126(Le127)
 
 * Dynamic Programming
