@@ -14,7 +14,7 @@ function findChange(amount, coins, startIdx, buffer, results, currentSum) {
   }
 
   if (currentSum === amount) {
-    results.push(buffer);
+    results.push([...buffer]);
     return;
   }
 
