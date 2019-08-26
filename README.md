@@ -18,7 +18,7 @@
 - Stack & Queue
 
   - Algo: 14, 15, 16, 17
-  - LeetCode: 20, 225, 232, 155, 716
+  - LeetCode: 20, 225, 232, 155, 716, 227
   - Algoexpert: 12.1
 
 - Tree
