@@ -17,7 +17,7 @@
 
 - Stack & Queue
 
-  - Algo: 14, 15, 16, 17, slidingWindowSum,
+  - Algo: 14, 15, 16, 17, slidingWindowSum,queueWithMax
   - LeetCode: 20, 225, 232, 155, 716, 227, 224
   - Algoexpert: 12.1
 
