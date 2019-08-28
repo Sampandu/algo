@@ -52,18 +52,17 @@
   - Algo: 22, 23, Topological Sort,
   - Lcode: 69, 71, 242, 433, 892, 611
   - LeetCode: 297, 107, 133, 127, 207, 210
-  - Lc69 -> Le297 -> Le107 -> Lc71 -> Lc242 -> Le133 -> Le127 -> Lc433 -> Lc611
 
 * DFS
 
   - LeetCode: 78, 90, 46, 47, 39, 51, 79, 212, 126, 17, 518, 322, 139
   - Lcode: 52, 197, 198, 425
   - Algo: maze
-  - Le51 -> Lc52 -> Lc197 -> Lc198 -> Lc425 -> Le79 -> Le212 -> Le126(Le127)
 
 * Dynamic Programming
 
   - Algoexpert: 4.1, 4.2, 4.3, 4.4
+  - Leetcode: 70
 
 * Trie
   - Algoexpert: 14.1, 14.2
