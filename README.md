@@ -62,7 +62,7 @@
 * Dynamic Programming
 
   - Algoexpert: 4.1, 4.2, 4.3, 4.4
-  - Leetcode: 70
+  - Leetcode: 70, 673
 
 * Trie
   - Algoexpert: 14.1, 14.2
