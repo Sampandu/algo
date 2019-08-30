@@ -9,7 +9,7 @@
 
   - AlgoExpert: 5.2, 5.4, 5.5, 5.6
   - LCode: 200
-  - Leetcode: 151
+  - Leetcode: 151, 557
 
 - Linked List
 
