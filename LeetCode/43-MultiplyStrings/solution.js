@@ -23,6 +23,7 @@ var multiply = function(num1, num2) {
     if (carry !== 0) {
       subRes[subRes.length - 1] = carry;
     } else {
+      //remove all leading zero
       while (subRes[subRes.length - 1] === 0) {
         subRes.pop();
       }
