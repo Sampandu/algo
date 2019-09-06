@@ -1,1 +1,1 @@
-//implement a quick sort algorithm
+//implement a merge sort algorithm

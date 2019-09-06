@@ -26,6 +26,7 @@
 
   - Binary Search Tree
     - AlgoExpert: 2.1, 2.2, 2.3, 2.4
+    - Algo: ImplementOfBFS
   - Binary Tree
     - AlgoExpert: 3.1, 3.3
     - LeetCode: 124
