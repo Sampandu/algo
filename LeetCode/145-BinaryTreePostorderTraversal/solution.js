@@ -25,3 +25,18 @@ function traversal(root, result) {
   traversal(root.right, result);
   result.push(root.val);
 }
+
+//solution2: iteration
+var postorderTraversal = function(root) {
+  if (root === null || root.length === 0) return [];
+
+  const stack = [root];
+  const result = [];
+  while (stack.length) {
+    const node = stack.pop();
+    result.unshift(node.val);
+    node.left && stack.push(node.left);
+    node.right && stack.push(node.right);
+  }
+  return result;
+};
