@@ -29,7 +29,7 @@
     - Algo: ImplementOfBFS
   - Binary Tree
     - AlgoExpert: 3.1, 3.3
-    - LeetCode: 124, 94, 144, 145
+    - LeetCode: 124, 94, 144, 145, 104
   - Heap
     - LeetCode: 703, 295
     - AlgoExpert: 7.1, 7.2
