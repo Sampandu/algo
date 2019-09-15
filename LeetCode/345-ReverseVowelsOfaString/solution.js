@@ -4,6 +4,7 @@
  */
 
 // letter includes upper case and lower case letter
+//edge case '.,'
 var reverseVowels = function(s) {
   if (s === null || s.length === 0) return '';
 
