@@ -9,6 +9,7 @@ const rotate = matrix => {
 };
 
 function rotateLayer(arr, start, end) {
+  //start means the start index of row and column, end means the end index of row and column
   for (let cur = 0; start + cur <= end; cur++) {
     const top = arr[start][start + cur];
     arr[start][start + cur] = arr[end - cur][start]; //from left to top
