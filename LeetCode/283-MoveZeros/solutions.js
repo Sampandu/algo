@@ -33,6 +33,7 @@ const moveZeroes = nums => {
 };
 
 //solution3
+//move zeros to the right
 const moveZeroes = nums => {
   let count = 0;
   for (let i = 0; i < nums.length; i++) {
@@ -42,6 +43,19 @@ const moveZeroes = nums => {
   }
   while (count < nums.length) {
     nums[count++] = 0;
+  }
+};
+//move zeros to the left
+const moveZeroes = nums => {
+  let count = nums.length - 1;
+  for (let i = nums.length - 1; i >= 0; i--) {
+    if (nums[i] !== 0) {
+      nums[count--] = nums[i];
+    }
+  }
+
+  while (count >= 0) {
+    nums[count--] = 0;
   }
 };
 
