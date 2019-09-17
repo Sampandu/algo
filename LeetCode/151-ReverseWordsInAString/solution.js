@@ -1,3 +1,4 @@
+//solution1: reverse
 var reverseWords = function(s) {
   if (s === null || s.length === 0) return '';
 
@@ -35,3 +36,25 @@ function reverseStr(s, start, end) {
   }
   return result;
 }
+
+//solution2
+var reverseWords = function(s) {
+  if (s === null || s.length === 0) return '';
+
+  let temp = '';
+  let res = '';
+  s = s.trim();
+  let i = s.length - 1;
+  while (i >= 0) {
+    if (s[i] !== ' ') {
+      temp = s[i] + temp;
+    } else if (s[i] === ' ' && temp !== '') {
+      //case: double space'  '
+      res = res + temp + ' ';
+      temp = '';
+    }
+    i--;
+  }
+  res = res + temp;
+  return res;
+};
