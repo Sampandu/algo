@@ -12,7 +12,7 @@ var checkSubarraySum = (nums, k) => {
   }
 
   let sum = 0;
-  const map = { 0: 1 };
+  const map = { 0: -1 }; //nums = [0,0], k = -1, in this case, we set map['0'] = -1 not 1
   for (let i = 0; i < nums.length; i++) {
     sum += nums[i];
 
