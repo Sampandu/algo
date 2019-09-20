@@ -15,6 +15,7 @@
 
   - Leetcode: 24, 25, 206
   - AlgoExpert: 8.1
+  - Leetcode: 2
 
 - Stack & Queue
 
