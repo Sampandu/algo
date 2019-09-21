@@ -13,7 +13,7 @@
 
 - Linked List
 
-  - Leetcode: 24, 25, 206
+  - Leetcode: 24, 25, 206, 328
   - AlgoExpert: 8.1
   - Leetcode: 2
 
