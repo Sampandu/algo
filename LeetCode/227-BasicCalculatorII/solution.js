@@ -1,3 +1,4 @@
+//the string might has interior spaces, like ' 2/ 4  + 2'
 var calculate = function(s) {
   if (s === null || s.length === 0) return;
 
@@ -37,7 +38,7 @@ var calculate = function(s) {
     return Number(result);
   }
 
-  return operand.pop();
+  // return operand.pop();
 };
 
 function isOperator(char) {
@@ -50,8 +51,8 @@ function precedence(char) {
 }
 
 function process(operand, operator) {
-  const num2 = +operand.pop();
-  const num1 = +operand.pop();
+  const num2 = +operand.pop(); //transform string into number
+  const num1 = +operand.pop(); //transform string into number
 
   const op = operator.pop();
   let result = 0;
