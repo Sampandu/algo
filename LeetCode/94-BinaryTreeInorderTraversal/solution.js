@@ -26,7 +26,7 @@ function traversal(root, result) {
   traversal(root.right, result);
 }
 
-//solution2: iteration
+//solution2: iteration, space O(1)
 var inorderTraversal = function(root) {
   if (root === null || root.length === 0) return [];
 
@@ -41,6 +41,31 @@ var inorderTraversal = function(root) {
       const node = stack.pop();
       result.push(node.val);
       curr = node.right;
+    }
+  }
+  return result;
+};
+
+//solution3: iteration, space O(n)
+var inorderTraversal = function(root) {
+  if (root === null) return [];
+
+  const visited = new Set();
+  const stack = [root];
+  const result = [];
+  while (stack.length) {
+    const node = stack.pop();
+    if (visited.has(node)) {
+      node !== null && result.push(node.val);
+    } else {
+      if (node !== null && node.rigth !== null) {
+        stack.push(node.right);
+      }
+      visited.add(node);
+      stack.push(node);
+      if (node !== null && node.left !== null) {
+        stack.push(node.left);
+      }
     }
   }
   return result;
