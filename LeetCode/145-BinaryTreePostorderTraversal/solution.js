@@ -40,3 +40,24 @@ var postorderTraversal = function(root) {
   }
   return result;
 };
+
+//solution3: iteration, space O(n)
+var postorderTraversal = function(root) {
+  if (root === null) return [];
+
+  const visited = new Set();
+  const res = [];
+  const stack = [root];
+  while (stack.length) {
+    const node = stack.pop();
+    if (visited.has(node)) {
+      res.push(node.val);
+    } else {
+      visited.add(node);
+      stack.push(node);
+      if (node.right) stack.push(node.right);
+      if (node.left) stack.push(node.left);
+    }
+  }
+  return res;
+};
