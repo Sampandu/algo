@@ -1,3 +1,4 @@
+//solution1: using factory function
 /**
  * Initialize your data structure here.
  */
@@ -54,3 +55,35 @@ MyHashMap.prototype.hashing = function(key) {
   }
   return hash;
 };
+
+// solution2: using class
+class MyHashMap {
+  constructor() {
+    this.map = [];
+  }
+
+  put(key, value) {
+    const hashcode = this.hashing(key, value);
+    this.map[hashcode] = value;
+  }
+
+  get(key) {
+    const hashcode = this.hashing(key);
+    return this.map[hashcode] >= 0 ? this.map[hashcode] : -1;
+  }
+
+  remove(key) {
+    const hashcode = this.hashing(key);
+    delete this.map[hashcode];
+  }
+
+  hashing(key) {
+    key = key.toString();
+    let hash = 0,
+      x = 53;
+    for (let i = 0; i < key.length; i++) {
+      hash = hash * x + key.charCodeAt(i);
+    }
+    return hash;
+  }
+}
