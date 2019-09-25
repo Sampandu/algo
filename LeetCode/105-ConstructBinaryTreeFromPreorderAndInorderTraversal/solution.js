@@ -31,7 +31,7 @@ function construct(preorder, preStart, preEnd, inorder, inStart, inEnd) {
 
   let k = -1;
   for (let i = inStart; i <= inEnd; i++) {
-    if (inorder[i] === k) {
+    if (inorder[i] === rootValue) {
       k = i;
       break;
     }
@@ -51,7 +51,7 @@ function construct(preorder, preStart, preEnd, inorder, inStart, inEnd) {
   ); //preStart + (k - inStart)
   root.right = construct(
     preorder,
-    preStart + 1 + (k - inStart),
+    preStart + (k - inStart) + 1,
     preEnd,
     inorder,
     k + 1,
