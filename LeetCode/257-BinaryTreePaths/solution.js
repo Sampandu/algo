@@ -22,7 +22,6 @@ function findTreePaths(n, temp, results) {
 
   if (!n.left && !n.right) {
     const path = temp.join('->');
-    temp = [];
     results.push(path);
     return;
   }
