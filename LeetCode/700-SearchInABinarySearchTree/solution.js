@@ -10,6 +10,7 @@
  * @param {number} val
  * @return {TreeNode}
  */
+//solution1: top bottom, recursion
 var searchBST = function(root, val) {
   if (root === null || val === null) return null;
 
@@ -27,3 +28,20 @@ function search(root, val) {
 
   return null;
 }
+
+//solution2, iteration
+var searchBST = function(root, val) {
+  if (root === null || val === null) return null;
+
+  let current = root;
+  while (current !== null) {
+    if (current.val === val) {
+      return current;
+    } else if (current.val < val) {
+      current = current.right;
+    } else {
+      current = current.left;
+    }
+  }
+  return null;
+};
