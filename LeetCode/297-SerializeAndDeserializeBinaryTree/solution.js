@@ -14,28 +14,28 @@
  */
 const serialize = root => {
   if (root === null) {
-    return ''
+    return '';
   }
 
   const queue = [root],
-        res = []
+    res = [];
   while (queue.length) {
-    const node = queue.shift()
+    const node = queue.shift();
     if (node === null) {
-      res.push('null')
-      continue
+      res.push('null');
+      continue; //missing
     }
-    res.push(node.val)
-    queue.push(node.left)
-    queue.push(node.right)
+    res.push(node.val);
+    queue.push(node.left);
+    queue.push(node.right);
   }
 
   //remove all of the 'null' at the end of the res
   while (res[res.length - 1] === 'null') {
-    res.pop()
+    res.pop();
   }
-  return res.toString()
-}
+  return res.toString();
+};
 
 /**
  * Decodes your encoded data to tree.
@@ -45,24 +45,23 @@ const serialize = root => {
  */
 var deserialize = data => {
   if (data === null || data.length === 0) {
-    return null
+    return null;
   }
 
   const arr = data.split(','),
-        root = new TreeNode(parseInt(arr[0])),
-        queue = [root]
+    root = new TreeNode(parseInt(arr[0])),
+    queue = [root];
   for (let i = 1; i < arr.length; i++) {
-    const node = queue.shift()
+    const node = queue.shift();
     if (arr[i] !== 'null') {
-      node.left = new TreeNode(parseInt(arr[i]))
-      queue.push(node.left)
+      node.left = new TreeNode(parseInt(arr[i]));
+      queue.push(node.left);
     }
-    i++
+    i++;
     if (arr[i] !== 'null' && i < arr.length) {
-      node.right = new TreeNode(parseInt(arr[i]))
-      queue.push(node.right)
+      node.right = new TreeNode(parseInt(arr[i]));
+      queue.push(node.right);
     }
   }
-  return root
-}
-
+  return root;
+};
