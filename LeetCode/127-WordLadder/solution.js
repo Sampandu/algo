@@ -39,8 +39,8 @@ var ladderLength = function(beginWord, endWord, wordList) {
             queue.push(temp);
             seen.add(temp);
           }
-          arr[i] = word[i];
         }
+        arr[i] = word[i];
       }
     }
     len++;

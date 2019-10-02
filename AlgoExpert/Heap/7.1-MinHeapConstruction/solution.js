@@ -47,6 +47,23 @@ class MinHeap {
     }
   }
 
+  //solution2 for siftUp
+  siftUp(currentIdx, heap) {
+    let parentIdx = Math.floor((currentIdx - 1) / 2);
+    while (parentIdx >= 0) {
+      if (heap[currentIdx] < heap[parentIdx]) {
+        [heap[currentIdx], heap[parentIdx]] = [
+          heap[parentIdx],
+          heap[currentIdx],
+        ];
+        currentIdx = parentIdx;
+        parentIdx = Math.floor((currentIdx - 1) / 2);
+      } else {
+        break;
+      }
+    }
+  }
+
   peek() {
     return this.heap[0];
   }
