@@ -24,9 +24,9 @@ var flatten = function(root) {
 };
 
 function preorder(node, arr) {
-  if (node === null) {
-    return;
-  }
+  // if (node === null) {
+  //   return;
+  // }
 
   arr.push(node.val);
   node.left && preorder(node.left, arr);
