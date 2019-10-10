@@ -11,6 +11,7 @@ const shortestPath = function(grid, source, destination) {
     return -1;
   }
 
+  //the shift is determined by knight
   const dx = [1, 1, -1, -1, 2, 2, -2, -2];
   const dy = [2, -2, 2, -2, 1, -1, 1, -1];
 
