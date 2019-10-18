@@ -15,3 +15,5 @@ const permutationIndex = function(A) {
   }
   return result;
 };
+
+
