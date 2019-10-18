@@ -16,6 +16,7 @@ function getOrderedJobs(graph) {
   const orderedJobs = [];
   const nodesWithNoPrereqs = graph.nodes.filter(node => !node.numOfPrereqs);
   while (nodesWithNoPrereqs.length) {
+    //checks if the length of nodesWithNoPrereqs is 1 everytime, if yes, we can say this graph has only one topological order.
     const node = nodesWithNoPrereqs.pop();
     orderedJobs.push(node.job);
     removeDeps(node, nodesWithNoPrereqs);
