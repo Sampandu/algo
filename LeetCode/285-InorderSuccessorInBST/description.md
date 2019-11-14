@@ -20,7 +20,7 @@ Output: 2
 Explanation:
 2
 / \
- 1 3
+1 3
 Binary Tree Representation
 
 Challenge
